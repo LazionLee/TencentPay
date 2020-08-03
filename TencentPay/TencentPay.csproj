@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Senparc.Weixin.MP" Version="16.10.502.2" />
+    <PackageReference Include="Senparc.Weixin.TenPay" Version="1.5.502.4" />
+    <PackageReference Include="Senparc.Weixin.WxOpen" Version="3.8.502.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helper\" />
+  </ItemGroup>
+
+
+</Project>
