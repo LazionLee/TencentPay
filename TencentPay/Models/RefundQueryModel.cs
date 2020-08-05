@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace TencentPay.Models
+﻿namespace TencentPay.Models
 {
     public class RefundQueryModel
     {
@@ -14,7 +9,7 @@ namespace TencentPay.Models
         public string DeviceInfo { get; set; }
         public string OutRefundNo { get; set; }
         public string RefundId { get; set; }
-        public int Offset { get; set; }
+        public int? Offset { get; set; }
 
     }
 }

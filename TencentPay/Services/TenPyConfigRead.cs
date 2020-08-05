@@ -1,17 +1,13 @@
 ﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace TencentPay.Services
 {
-    public class TenPyConfigRead:ITenPyConfigRead
+    public class TenPyConfigRead : ITenPyConfigRead
     {
-       // public IConfiguration Configuration { get; }
+        // public IConfiguration Configuration { get; }
         public TenPyConfigRead(IConfiguration configuration)
         {
-            DeviceInfo= configuration["DeviceInfo"];
+            DeviceInfo = configuration["DeviceInfo"];
             AppId = configuration["SenparcWeixinSetting:TenPayV3_AppId"];
             AppSecret = configuration["SenparcWeixinSetting:TenPayV3_AppSecret"];
             MchId = configuration["SenparcWeixinSetting:TenPayV3_MchId"];
@@ -22,7 +18,7 @@ namespace TencentPay.Services
             TenPayV3_WxOpenNotify = configuration["SenparcWeixinSetting:TenPayV3_WxOpenNotify"];
             TenPayV3_WxOpenTenpayRefundNotify = configuration["SenparcWeixinSetting:TenPayV3_WxOpenTenpayRefundNotify"];
         }
-        public string DeviceInfo { get;  }
+        public string DeviceInfo { get; }
         public string AppId { get; }
         /// <summary>
         /// 第三方用户唯一凭证密钥，即appsecret
@@ -58,7 +54,7 @@ namespace TencentPay.Services
         /// </summary>
         public string TenPayV3_WxOpenTenpayRefundNotify { get; }
 
-        
+
 
         /// <summary>
         /// 服务商模式下，特约商户的开发配置中的AppId
@@ -72,6 +68,6 @@ namespace TencentPay.Services
         /// 服务商模式下，特约商户的商户Id
         /// </summary>
         public string Sub_MchId { get; }
-        
+
     }
 }

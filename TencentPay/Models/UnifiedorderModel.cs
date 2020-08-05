@@ -1,9 +1,5 @@
 ﻿using Senparc.Weixin.TenPay;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace TencentPay.Models
 {
@@ -13,15 +9,15 @@ namespace TencentPay.Models
         ///以下为必填
         ///
 
-        
+
         [Required]
         public string OpenId { get; set; }//用户标识
-        
+
         [Required]
         public string Body { get; set; }//商品描述
         [Required]
         public int TotalFee { get; set; }//标价金额
-        [Required]      
+        [Required]
         public string OutTradeNo { get; set; }//商户订单号
         [Required]
         public string SpbillCreateIP { get; set; }//终端IP
@@ -37,7 +33,7 @@ namespace TencentPay.Models
         public TenPayV3Type TradeType { get; set; }
         public bool LimitPay { get; set; }
 
-            
+
         //public string SubOpenid { get; set; }
         public string ProductId { get; set; }
 
